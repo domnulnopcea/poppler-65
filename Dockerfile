@@ -7,7 +7,8 @@ RUN apt update && \
     tar xf poppler-0.65.0.tar && \
     cmake  -DCMAKE_BUILD_TYPE=Release   \
            -DCMAKE_INSTALL_PREFIX=/usr  \
-           -DENABLE_XPDF_HEADERS=ON
+           -DENABLE_XPDF_HEADERS=ON && \
+    make install       
 
 
 
