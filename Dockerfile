@@ -5,6 +5,7 @@ RUN apt update && \
     wget https://poppler.freedesktop.org/poppler-0.65.0.tar.xz && \    
     unxz poppler-0.65.0.tar.xz && \
     tar xf poppler-0.65.0.tar && \
+    cd poppler-0.65.0 && \
     cmake  -DCMAKE_BUILD_TYPE=Release   \
            -DCMAKE_INSTALL_PREFIX=/usr  \
            -DENABLE_XPDF_HEADERS=ON && \
