@@ -1,4 +1,4 @@
-FROM ubuntu:08.04
+FROM ubuntu:18.04
 
 RUN apt update && \
     apt install wget xz-utils cmake gcc build-essential libfontconfig1-dev pkg-config libjpeg-dev gnome-common libglib2.0-dev gtk-doc-tools libyelp-dev yelp-tools gobject-introspection libsecret-1-dev libnautilus-extension-dev libopenjp2-7 libopenjp2-7-dev && \
